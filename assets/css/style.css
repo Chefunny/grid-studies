@@ -1,0 +1,274 @@
+/**FONTS**/
+
+@font-face {
+  font-family: "Bogart";
+  src: url("../fonts/Bogart-Bold-trial.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "StarsAndLove";
+  src: url("../fonts/Stars&Love-BottomHeavy.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Rabbit";
+  src: url("../fonts/Rabbits-Fatso.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Genty";
+  src: url("../fonts/GentyDemo-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.bogart {
+  font-family: "Bogart", sans-serif;
+}
+
+.sidebar {
+  font-family: "Rabbit", sans-serif;
+  list-style: none;
+}
+
+h3 {
+  font-family: "Genty", sans-serif;
+}
+
+header {
+  background-color: #fae8e0;
+  color: #ff8d5b;
+  text-align: center;
+}
+
+.titleM {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 150px; /* Define una altura adecuada */
+  font-size: 40px;
+  padding: 10px;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 150px; /* Define una altura adecuada */
+  font-size: 50px;
+  width: 100%; /* Asegura que ocupa el ancho completo */
+  color: #ff8d5b;
+}
+
+nav {
+  background-color: #fffcbe;
+  font-size: 38px;
+  width: 100%; /* Asegura que el nav ocupa el ancho completo */
+}
+
+nav .nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Centra los elementos verticalmente en la lista */
+  justify-content: space-around; /* Distribuye los elementos uniformemente */
+  width: 100%; /* Ocupa todo el ancho disponible */
+  list-style: none; /* Elimina los bullets de lista */
+  padding: 0; /* Elimina padding predeterminado */
+  margin: 0; /* Elimina márgenes predeterminados */
+  height: 100px;
+  font-family: "StarsAndLove", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.rose a {
+  color: #ff8ba7;
+}
+.orange a {
+  color: #ff8d5b;
+}
+
+.rose a:hover,
+.orange a:hover {
+  background-color: white;
+  width: 200px;
+  text-align: center;
+  border-radius: 8%;
+}
+
+menu {
+  background-color: #d5f9ff;
+}
+
+menu,
+ul {
+  list-style: none;
+}
+
+.sidebar {
+  text-align: center;
+  font-size: 25px;
+  padding-top: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.sidebar ul {
+  margin: 20px;
+}
+.side a {
+  color: #695850;
+  text-decoration: none;
+}
+
+.category a {
+  color: #ff8d5b;
+  text-decoration: none;
+}
+
+.side a:hover {
+  background-color: #ff8ba7;
+  border-radius: 8%;
+  padding: 3px;
+}
+
+.category a:hover {
+  background-color: #ff8ba7;
+  color: #695850;
+  padding: 3px;
+  border-radius: 8px;
+}
+.sidebar > h2 {
+  color: #ff8d5b;
+}
+
+.side {
+  color: #695850;
+  margin: 15px;
+}
+
+.bogart {
+  color: #ff8d5b;
+}
+
+h3 {
+  color: #695850;
+}
+
+footer {
+  background-color: #fae8e0;
+}
+/**AJUSTANDO*/
+
+h1,
+h2,
+body,
+nav,
+main,
+menu,
+li,
+ul,
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
+/**GRID**/
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1.5fr 4fr;
+  grid-template-rows: auto auto 1fr auto;
+  height: 100vh;
+}
+
+header,
+nav,
+footer {
+  grid-column: 1/-1;
+}
+
+menu,
+main {
+  grid-row: 3/4;
+}
+
+.photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-gap: 10px;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  margin: 40px;
+}
+
+.photos img {
+  width: 250px;
+  height: 250px;
+  border-radius: 30%;
+  margin-top: 20px;
+}
+
+.classics {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+  font-size: 40px;
+}
+
+.classics h3 {
+  font-size: 55px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+.ph1,
+.ph2,
+.ph3,
+.ph4,
+.ph5,
+.ph6 {
+  font-family: "Rabbit", sans-serif;
+  margin-top: 14px;
+  margin-bottom: 25px;
+  border: #ff8ba7 2px solid;
+  width: 320px;
+  height: 320px;
+  border-radius: 30%;
+  background-color: #ff8ba7;
+}
+
+.ph1 a,
+.ph2 a,
+.ph3 a,
+.ph4 a,
+.ph5 a,
+.ph6 a {
+  text-decoration: none;
+  color: #695850;
+  font-size: 20px;
+}
+
+.buy {
+  margin-top: 8px;
+}
+
+.buy a:hover {
+  color: #695850;
+  background-color: #d5f9ff;
+  padding: 5px;
+  border-radius: 8%;
+}
